@@ -19,7 +19,7 @@
 /* This patch allows for a command to be executed after a specified time of inactivity.
  * https://tools.suckless.org/slock/patches/auto-timeout/
  */
-#define AUTO_TIMEOUT_PATCH 0
+#define AUTO_TIMEOUT_PATCH 1
 
 /* This patch adds a background image for slock.
  * This patch depends on the Imlib2 library, uncomment the relevant line in
@@ -119,7 +119,7 @@
  * no input (e.g. reading text, watching video, etc.).
  * https://tools.suckless.org/slock/patches/quickcancel/
  */
-#define QUICKCANCEL_PATCH 1
+#define QUICKCANCEL_PATCH 0
 
 /* This patch allows for commands to be executed when the user enters special passwords.
  * https://tools.suckless.org/slock/patches/secret-password/
@@ -142,5 +142,5 @@
 /* This patch adds the ability to get colors via Xresources.
  * https://tools.suckless.org/slock/patches/xresources/
  */
-#define XRESOURCES_PATCH 0
+#define XRESOURCES_PATCH 1
 

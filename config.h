@@ -94,13 +94,13 @@ static const int failonclear = 1;
 
 #if AUTO_TIMEOUT_PATCH
 /* length of time (seconds) until */
-static const int timeoffset = 60;
+static const int timeoffset = 30;
 
 /* should [command] be run only once? */
 static const int runonce = 1;
 
 /* command to be run after [time] has passed */
-static const char *command = "loginctl suspend";
+static const char *command = "loginctl -i suspend";
 #endif // AUTO_TIMEOUT_PATCH
 
 #if FAILURE_COMMAND_PATCH
@@ -115,9 +115,9 @@ static const char *failcommand = "loginctl sleep";
 #if SECRET_PASSWORD_PATCH
 static const secretpass scom[] = {
 	/* Password             command */
-	{ "poweroff",           "loginctl poweroff"},
-	{ "reboot",           "loginctl reboot"},
-	{ "suspend",           "loginctl suspend"},
+	{ "poweroff",           "loginctl -i poweroff"},
+	{ "reboot",           "loginctl -i reboot"},
+	{ "suspend",           "loginctl -i suspend"},
 };
 #endif // SECRET_PASSWORD_PATCH
 
